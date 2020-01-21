@@ -25,7 +25,7 @@ class DQN():
         state = self.env.reset()
         for j in range(200):
             action = agent.act(state)
-            # self.env.render()
+            self.env.render()
             state, reward, done, _ = self.env.step(action)
             if done:
                 print("Done")
